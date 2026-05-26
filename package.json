@@ -1,0 +1,18 @@
+{
+  "name": "para-organizer",
+  "version": "1.0.0",
+  "description": "AI-Powered PARA Method Organization Tool for Notion Workspace",
+  "main": "server/server.js",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix client --legacy-peer-deps && npm install --prefix server",
+    "client": "npm run dev --prefix client",
+    "server": "node server/server.js",
+    "dev": "npx concurrently -k -n \"client,server\" -c \"cyan,magenta\" \"npm run client\" \"npm run server\""
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.106.2",
+    "concurrently": "^8.2.2"
+  },
+  "author": "",
+  "license": "ISC"
+}
