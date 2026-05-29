@@ -40,13 +40,6 @@ Create a `.env` file inside the `server/` directory:
 ```env
 # server/.env
 
-# 1. AI Classification Integration (Configure at least one)
-GEMINI_API_KEY=your_google_gemini_api_key
-OPENAI_API_KEY=your_openai_api_key
-
-# 2. Server Customization (Optional)
-PORT=5000
-```
 
 * **Notion Credentials:** Input and test your Notion credentials dynamically through the **Notion Settings** subpage inside the running web dashboard.
 * **Row-Level Security (RLS):** Database templates and RLS policies are pre-defined in [schema.sql](file:///d:/Build-Project-with-AI-SolveProblem/PARA_ORGANIZE/server/db/schema.sql) for rapid PostgreSQL / Supabase deployments.
